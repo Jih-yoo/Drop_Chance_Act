@@ -1,8 +1,21 @@
+//main.cpp
+#include <iostream>
 #include "header1.h"
-#include "header2.h"
+using namespace std;
 
-double chance = calculatorDropChance(dropRate,attempts);
- double chance -1- pow(1 - ( 1 - dropRate , attempts) ;
+int main() {
+    double dropRate;
+    int attempts;
 
-return chance;
+    cout << "Enter the drop rate: ";
+    cin >> dropRate;
+    dropRate = dropRate/100;
+
+    cout << "Enter the number of attempts: ";
+    cin >> attempts;
+
+    double chance = dropChanceCalc(dropRate, attempts);
+    cout << "The chance of getting the drop in " << attempts << " attempts is: " << chance * 100 << "%" << endl;
+
+    return 0;
 }
